@@ -1,0 +1,59 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    width: 500px;
+    margin: auto;
+}
+
+fieldset {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+}
+
+#priceTable {
+    margin-top: 20px;
+}
+
+h2 {
+    color: darkblue;
+}
+
+.product {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
