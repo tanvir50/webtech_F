@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Portal</title>
+    <link rel="stylesheet" href="webs.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Course Registration Portal</h2>
+
+        <form onsubmit="return validateForm()">
+
+            <label>Student Name</label>
+            <input type="text" id="name">
+            <div class="error" id="nameError"></div>
+
+            <label>Student ID</label>
+            <input type="text" id="studentId">
+            <div class="error" id="idError"></div>
+
+            <label>Email</label>
+            <input type="text" id="email">
+            <div class="error" id="emailError"></div>
+
+            <label>Phone</label>
+            <input type="text" id="phone">
+            <div class="error" id="phoneError"></div>
+
+            <label>Department</label>
+            <select id="department">
+                <option>Select Department</option>
+                <option>CSE</option>
+                <option>EEE</option>
+                <option>BBA</option>
+                <option>English</option>
+            </select>
+            <div class="error" id="deptError"></div>
+
+            <label>Course Name</label>
+            <input type="text" id="course">
+            <div class="error" id="courseError"></div>
+
+            <label>Credit</label>
+            <select id="credit">
+                <option>Select Credit</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <div class="error" id="creditError"></div>
+
+            <label>Semester</label>
+            <div class="radio-group">
+                <input type="radio" name="semester" value="Spring"> Spring
+                <input type="radio" name="semester" value="Summer"> Summer
+                <input type="radio" name="semester" value="Fall"> Fall
+            </div>
+            <div class="error" id="semesterError"></div>
+
+            <label>
+                <input type="checkbox" id="confirm" onchange="toggleButton()">
+                I confirm that the information provided is correct
+            </label>
+
+            <br><br>
+
+            <button type="submit" id="submitBtn" disabled>
+                Register Course
+            </button>
+
+            <div id="finalMessage" class="success"></div>
+
+        </form>
+    </div>
+
+    <script src="webs.js"></script>
+</body>
+
+</html>
